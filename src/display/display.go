@@ -26,7 +26,7 @@ func PrintWin(word string, mapWord map[string]bool) {
 }
 
 func PrintLose(listHangState []string, hangState int) {
-	fmt.Println(listHangState[hangState])
+	fmt.Println(listHangState[9])
 	time.Sleep(1500 * time.Millisecond)
 	fmt.Println("Tu as maintenant la mort d'un stickman sur la conscience")
 	fmt.Println("SHAME !")
