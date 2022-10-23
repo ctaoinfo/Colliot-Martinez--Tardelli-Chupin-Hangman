@@ -19,30 +19,18 @@ func Game() {
 	listHangState := input.ReturnListHangmanStates()
 
 	for hangState < 9 && !CheckIsFound(mapWord) {
-		fmt.Println(listHangState[hangState])
-		display.PrintHidden(word, mapWord)
-		fmt.Println("---------------------------------------")
-		fmt.Println("Lettres utilisées :", letterUsed)
-		fmt.Print("\n")
+		display.PrintGame(listHangState, hangState, letterUsed)
 		input.CheckInput(mapWord, pointHangState, word, &letterUsed)
 		time.Sleep(1500 * time.Millisecond)
 		fmt.Println("=======================================")
 	}
 
 	if CheckIsFound(mapWord) {
-		display.PrintHidden(word, mapWord)
-		fmt.Print("\n")
-		fmt.Println("Bravo ! Tu as trouvé le mot")
-		fmt.Println("Tes ancêtres sont fiers")
-		time.Sleep(1500 * time.Millisecond)
+		display.PrintWin(word, mapWord)
 	}
 
 	if hangState >= 9 {
-		fmt.Println(listHangState[hangState])
-		time.Sleep(1500 * time.Millisecond)
-		fmt.Println("Tu as maintenant la mort d'un stickman sur la conscience")
-		fmt.Println("SHAME !")
-		time.Sleep(1500 * time.Millisecond)
+		display.PrintLose(listHangState, hangState)
 	}
 }
 
