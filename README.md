@@ -33,3 +33,4 @@ Puis lancer le programme avec la commande suivant: 'go run .\main.go -words=word
 si vous voulez utiliser le deuxième ou troisième dictionnaire ajouter un chiffre derrière, exemple 'go run ./main.go -words=words2' 
 ou alors 'go run ./main.go -words=words3'.
 Après cela vos pourrez commencez à jouer pour trouver le mot.
+Bonne Chance !!
