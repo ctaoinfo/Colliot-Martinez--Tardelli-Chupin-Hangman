@@ -1,6 +1,7 @@
 # HangManGroupe
 
 Le projet hangman consiste à réaliser un jeu du pendu dans le terminal.
+Les consignes sont sur le repo suivant : https://github.com/Lyon-Ynov-Campus/YTrack/tree/master/subjects/hangman/hangman-classic
 
 ## Langage
 
