@@ -30,8 +30,8 @@ Les vies sont symbolisé par le pendu en construction.
 
 Pour commencez il faut ouvir un terminal CMD ou bash puis rendez-vous dans le fichier src du dossier télécharger.
 
-Puis lancer le programme avec la commande suivant: 'go run .\main.go -words=words'
-si vous voulez utiliser le deuxième ou troisième dictionnaire ajouter un chiffre derrière, exemple 'go run ./main.go -words=words2' 
+Puis lancer le programme avec la commande suivant: 'go run .\main.go'
+si vous voulez utiliser le deuxième ou troisième dictionnaire ajouter le flag words derrière, exemple : 'go run ./main.go -words=words2' 
 ou alors 'go run ./main.go -words=words3'.
 Après cela vos pourrez commencez à jouer pour trouver le mot.
 Bonne Chance !!
