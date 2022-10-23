@@ -33,7 +33,7 @@ func PrintLose(listHangState []string, hangState int) {
 	time.Sleep(1500 * time.Millisecond)
 }
 
-func PrintGame(listHangState []string, hangState int, letterUsed string) {
+func PrintGame(listHangState []string, hangState int, word, letterUsed string, mapWord map[string]bool) {
 	fmt.Println(listHangState[hangState])
 	PrintHidden(word, mapWord)
 	fmt.Println("---------------------------------------")
