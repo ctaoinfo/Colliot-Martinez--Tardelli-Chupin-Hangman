@@ -9,7 +9,7 @@ Le projet hangman consiste à réaliser un jeu du pendu dans le terminal.
 ## Auteurs
 
 - Andrea Taredelli
-- Théo
+- Théo Colliot-Martinez
 - Tao Chupin
 
 ## Installation 
