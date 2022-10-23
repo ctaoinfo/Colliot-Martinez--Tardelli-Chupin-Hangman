@@ -37,7 +37,7 @@ func Game() {
 func CheckIsFound(mapWordToFind map[string]bool) bool {
 	//Vérifie si toutes les lettres du mot sont trouvées
 	for key := range mapWordToFind {
-		if mapWordToFind[key] == false {
+		if !mapWordToFind[key] {
 			return false
 		}
 	}
@@ -46,12 +46,12 @@ func CheckIsFound(mapWordToFind map[string]bool) bool {
 
 func FlagInput() string {
 	//Récupère le flag -word
-	flagPtr := flag.String("words", "", "Mot à trouver")
+	flagPtr := flag.String("words", "words", "Mot à trouver")
 	// si flag vide, alors erreur
 	if *flagPtr == "" {
 		fmt.Println("Aucun mot n'a été renseigné")
 		fmt.Println("Veuillez renseigner un mot avec le flag -words")
-		fmt.Println("Exemple : go run main.go '-words=words ou words2 ou words3'")
+		fmt.Println("Exemple : go run main.go -words=words ou =words2 ou =words3")
 
 	}
 
