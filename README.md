@@ -18,7 +18,7 @@ Les consignes sont sur le repo suivant : https://github.com/Lyon-Ynov-Campus/YTr
 Pour récuperer le dossier, ouvrir un emplacement où vous voulez le télécharger, ouvrir un
 git bash puis taper la commande suivant : https://github.com/ctaoinfo/hangmanGroup.git
 
-## Utilisation / Règles
+## Règles
 
 Le jeu consiste à retrouer un mot séléctionné au hazard dans un fichier 'dictionnaire', pour jouer vous devez entrer une lettre (minuscules ou majuscules) 
 et retouver le mot caché pour cela vous aurez 10 vies, après une tentative de lettre vous perdrez 1 vie jusqu'à arriver à 0 si cela arrive vous retrouverez 
