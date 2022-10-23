@@ -8,9 +8,11 @@ import (
 	"time"
 )
 
-func ReturnListWord() []string {
+func ReturnListWord(wordsfile string) []string {
+
+	file, err := os.Open("../doc/" + wordsfile + ".txt")
+
 	//Ouvre le fichier words.txt et crée un tableau avec tous les mots du fichier
-	file, err := os.Open("../doc/words.txt")
 
 	if err != nil {
 		log.Fatal(err)

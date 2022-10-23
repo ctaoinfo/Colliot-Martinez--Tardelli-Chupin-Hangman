@@ -1,6 +1,7 @@
 package game
 
 import (
+	"flag"
 	"fmt"
 	"src/display"
 	"src/input"
@@ -10,8 +11,8 @@ import (
 func Game() {
 	hangState := 0
 	pointHangState := &hangState
-
-	word, mapWord := input.WordChoice(input.ReturnListWord())
+	flag := FlagInput()
+	word, mapWord := input.WordChoice(input.ReturnListWord(flag))
 	var letterUsed string
 	listHangState := input.ReturnListHangmanStates()
 
@@ -51,4 +52,12 @@ func CheckIsFound(mapWordToFind map[string]bool) bool {
 		}
 	}
 	return true
+}
+
+func FlagInput() string {
+
+	wordsInput := flag.String("words", "", "Renvoie le fichier voulu")
+
+	flag.Parse()
+	return *wordsInput
 }
