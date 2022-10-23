@@ -1,6 +1,9 @@
 package display
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func PrintHidden(word string, listLetter map[string]bool) {
 	//Parcours le mot, vérifie dans la map si la lettre est trouvée. Si oui, print la lettre. Si non, print "_".
@@ -14,7 +17,7 @@ func PrintHidden(word string, listLetter map[string]bool) {
 	fmt.Print("\n")
 }
 
-func PrintWin(word string, map[string]bool) {
+func PrintWin(word string, mapWord map[string]bool) {
 	PrintHidden(word, mapWord)
 	fmt.Print("\n")
 	fmt.Println("Bravo ! Tu as trouvé le mot")

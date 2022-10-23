@@ -19,7 +19,7 @@ func Game() {
 	listHangState := input.ReturnListHangmanStates()
 
 	for hangState < 9 && !CheckIsFound(mapWord) {
-		display.PrintGame(listHangState, hangState, letterUsed)
+		display.PrintGame(listHangState, hangState, letterUsed, word, mapWord)
 		input.CheckInput(mapWord, pointHangState, word, &letterUsed)
 		time.Sleep(1500 * time.Millisecond)
 		fmt.Println("=======================================")
