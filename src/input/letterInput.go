@@ -29,11 +29,12 @@ func CheckInput(mapWordToFind map[string]bool, hangState *int, word string, lett
 		}
 	} else {
 		if strings.Contains(*letterUsed, input) {
-			fmt.Println("Cette lettre adéjà été utilisée")
+			fmt.Println("Cette lettre a déjà été utilisée")
 		} else {
 			for k := range mapWordToFind {
 				if k == input {
 					mapWordToFind[k] = true
+					*letterUsed += input
 					return
 				}
 			}
