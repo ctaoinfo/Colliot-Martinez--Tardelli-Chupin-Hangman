@@ -1,7 +1,7 @@
 package main
 
 import (
-	"src/game"
+	"hangmangroup/src/game"
 )
 
 func main() {

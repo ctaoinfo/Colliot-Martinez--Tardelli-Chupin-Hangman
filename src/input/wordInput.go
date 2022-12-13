@@ -10,7 +10,7 @@ import (
 
 func ReturnListWord(wordsfile string) []string {
 	// wordsfile est le fichier que l'on va vouloir ouvrir grâce au flag
-	file, err := os.Open("../doc/" + wordsfile + ".txt")
+	file, err := os.Open("./doc/" + wordsfile + ".txt")
 
 	//Ouvre le fichier words.txt et crée un tableau avec tous les mots du fichier
 

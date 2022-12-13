@@ -3,8 +3,8 @@ package game
 import (
 	"flag"
 	"fmt"
-	"src/display"
-	"src/input"
+	"hangmangroup/src/display"
+	"hangmangroup/src/input"
 	"time"
 )
 
@@ -30,7 +30,7 @@ func Game() {
 	}
 
 	if hangState >= 9 {
-		display.PrintLose(listHangState, hangState)
+		display.PrintLose(listHangState, word)
 	}
 }
 

@@ -8,7 +8,7 @@ import (
 )
 
 func ReturnListHangmanStates() []string {
-	file, err := os.Open("../doc/hangman.txt")
+	file, err := os.Open("./doc/hangman.txt")
 
 	if err != nil {
 		log.Fatal(err)
